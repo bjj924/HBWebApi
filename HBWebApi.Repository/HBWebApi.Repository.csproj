@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="OrdersDetailsRepository\**" />
+    <Compile Remove="OrdersRepository\**" />
+    <Compile Remove="ProductRepository\**" />
+    <EmbeddedResource Remove="OrdersDetailsRepository\**" />
+    <EmbeddedResource Remove="OrdersRepository\**" />
+    <EmbeddedResource Remove="ProductRepository\**" />
+    <None Remove="OrdersDetailsRepository\**" />
+    <None Remove="OrdersRepository\**" />
+    <None Remove="ProductRepository\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\HBWebApi.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataBaseScripts\" />
+  </ItemGroup>
+
+</Project>

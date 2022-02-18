@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "APINjtVX91snYWgEgLRDNoQYH8kB2/Nj6foW3QTUNMCiLFBbT1lWmog4FxmLvdnNuuDxFQ+QNHA4z9hOYNycsg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\johob\\Desktop\\Git Projects\\HB Teachnical Exercise\\HB_WebApi\\HBTechnicalExercise\\Entities\\HBWebApi.Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\johob\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.1\\microsoft.entityframeworkcore.abstractions.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
