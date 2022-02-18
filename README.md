@@ -1,6 +1,6 @@
-<h1 align="center">Welcome to readme for the HBWebApi👋</h1>
+<h1 align="center">👋Welcome to the readme for the HBWebApi👋</h1>
 
-<p align="center"> Disclaimer : This is an web api application in .net core build for a technical exercise.</p>
+<p align="center"> Disclaimer: This is a web API application in .net core build for a technical exercise.</p>
 
 ## Structure
 The Web Api is divided into five parts:
@@ -12,7 +12,7 @@ HBWebApi.Entities (Models)
 HBWebApi.Repository (EF methods) 
 HBWebApi.Domain.Test (Test for the Business layer)
 ```
- **There has been a problem with the naming of the csproj of the HBWebApi.Domain and HBWebApi.Entities, in the solution of the proyect in visual studio they look OK, but in the folders, we can see that are references as Business and Entities**
+ **There has been a problem with the naming of the csproj of the HBWebApi.Domain and HBWebApi.Entities, in the solution of the project in visual studio they look OK, but in the folders, we can see that are references as Business and Entities.**
  
 ## Points to resolve
  
@@ -48,27 +48,27 @@ An Orders Details table with OrderID, OrderDetailID, ProductNumber, ProductID, P
 
 ## About the Application
 
-- The aplication, when is started from visual studio, it's already will go to the **Swagger** that is configured. With this is not neccesary use Postman or the need to download it.
-- 
+- The application, when it started from visual studio, it's already will go to the Swagger that is configured. With this is not necessary to use Postman or the need to download it.
+
 ![image](https://user-images.githubusercontent.com/29278519/154650810-883ef5d2-dbdc-4698-84ff-f4f56a3346ab.png)
 
 **Once in the Swagger, you can see two endpoints. Each one to resolve one of the problems:**
- 1. **GetArraySum**: Recieves an object with two values string, in this case the endpoint recieves it from query, as is showing in the next image. 
+ 1. **GetArraySum**: Receives an object with two values string, in this case, the endpoint receives it from the query, as is shown in the next image. . 
   ![image](https://user-images.githubusercontent.com/29278519/154651282-2c329303-5e4a-4a3a-b1be-9c1b43b00b33.png)
   <h5 align="center">The logic for this will be in the HBWebApi.Domain --> ArrayLogic --> CalculateArray.cs</h5>
   
- 2. **GetCustomerByProduct**: As the same to the previus one, this endpoint recieves the productId from query, and the search it in the DataBase and return a object with the values (there is a sample of the object in the image with the values that will be returning).
+ 2. **GetCustomerByProduct**: Is the same as the previous one, this endpoint receives the productId from a query, searches it in the DataBase, and returns an object with the values (there is a sample of the object in the image with the values that will be returning).
  ![image](https://user-images.githubusercontent.com/29278519/154652235-a1539035-82c2-4061-9ac0-af6410fccb4f.png)
 <h5 align="center">The query that retrieves from the database will be in the HBWebApi.Repository --> CustomerRepository --> CustomerRepository.cs</h5>
 
 ## DataBase
-To use the Databa first is neccesary to create it. <br />
-Inside the project in **HBWebApi.Repository --> DataBaseScripts --> HBExerciseQuery.sql** we can find the query to create the database, the tables and fill the tables (there is too the query that is use in the project to retrive the custumer but in sql format and is commented in the file, to run it just uncommented it after the tables where filled and run it)
+To use the Databa first is necessary to create it. <br />
+Inside the project in **HBWebApi.Repository --> DataBaseScripts --> HBExerciseQuery.sql** we can find the query to create the database, the tables and fill the tables (there is too the query that is used in the project to retrieve the customer but in SQL format and is commented in the file, to run it just uncommented it after the tables where filled and run it)
 <br />
 
 ![image align="center"](https://user-images.githubusercontent.com/29278519/154654233-4051db29-160b-4874-85da-1a8c60ed0020.png)
 <br />
 
-***In case that there whas neccesary to change the database name, please change the name in the appsettings.json in the line of the DefaultConnection, the file is in the HBWebApi start project.***
+***In case that there was necessary to change the database name, please change the name in the appsettings.json in the line of the DefaultConnection, the file is in the HBWebApi start project.***
 
 ***Regards and good luck!***
